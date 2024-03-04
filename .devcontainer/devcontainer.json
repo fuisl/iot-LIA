@@ -1,0 +1,9 @@
+{
+	"name": "CounterFit",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/rocker-org/devcontainer-features/miniforge:1": {}
+	},
+	"forwardPorts": [5000],
+	"postCreateCommand": "pip install --user CounterFit counterfit-connection counterfit-shims-grove werkzeug==2.3.7"
+}
